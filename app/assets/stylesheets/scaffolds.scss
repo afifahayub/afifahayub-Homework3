@@ -1,0 +1,41 @@
+body {
+  background-color: #fff;
+  color: #333;
+  margin: 33px;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px
+}
+
+p,ol,ul,td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px
+}
+
+th {
+  padding-bottom: 5px
+}
+
+td {
+  padding: 0 5px 7px
+}
+
+label {
+  display: block
+}
+
+a:visited {
+  color: #666
+}
+
+
+body {
+  font-family: "helvetica"
+}
+
+#header {
+  padding: 10px;
+  background-color: lightgray;
+  border: 1px solid black
+}
