@@ -11,14 +11,14 @@
 </p>
 </br> </br>
 <p>
-<strong>Office Locations</strong>
+<strong>Office Locations</strong> </p>
 
 <table id="tables">
 <tr>
     <th>Address</th>
     <th>Zip Code</th>
     <th>Phone Number</th>
-  </tr>
+</tr>
 <tr>
 <% @physician.officelocs.each do |officeloc| %>
   <td> <%=officeloc.address %> </td>
@@ -35,24 +35,23 @@
 
  </br> </br>
  <p>
- <strong>Current Appointments</strong> 
+ <strong>Current Appointments</strong> </p>
+ 
  <table id="tables">
  <tr>
      <th>Patient Name</th>
      <th>Date of Appointment</th>
-   </tr>
-  <tr>
- <% @physician.appointments.each do |appointment| %>
-   <td>  <%=appointment.patient.name %> </td>
- <% end %>
- <% @physician.appointments.each do |appointment| %>
-  <td>  <%=appointment.visit %> </td>
-<% end %>
   </tr>
+  <tbody>
+  <% @physician.appointments.each do |appointment| %>
+    <tr>
+      <td><%= appointment.patient.name %></td>
+      <td><%= appointment.visit %></td>
+    </tr>
+  <% end %>
+</tbody>
   </table>
-<br>
-<br>
-<br>
+
 <br>
 <br>
 <br>
